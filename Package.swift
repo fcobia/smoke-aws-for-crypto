@@ -145,7 +145,7 @@ let package = Package(
         .package(url: "https://github.com/LiveUI/XMLCoding.git", from: "0.4.1"),
         .package(url: "https://github.com/amzn/smoke-http.git", from: "2.19.1"),
         .package(url: "https://github.com/amzn/smoke-aws-support.git", from: "1.7.0"),
-        .package(url: "https://github.com/apple/swift-crypto.git", from: "1.0.0"),
+		.package(url: "https://github.com/apple/swift-crypto.git", "1.0.0"..<"4.0.0"),
     ],
     targets: [
         .target(
