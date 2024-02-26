@@ -12,11 +12,11 @@
       },
       {
         "package": "smoke-aws-support",
-        "repositoryURL": "https://github.com/amzn/smoke-aws-support.git",
+        "repositoryURL": "https://github.com/fcobia/smoke-aws-support-for-crypto.git",
         "state": {
-          "branch": null,
-          "revision": "c46cd7e8b8f32d6629d57a8b2b58d6622bd898be",
-          "version": "1.7.0"
+          "branch": "franks_branch_1.7.0",
+          "revision": "27f43432abfe1db117d2dea577f9b330eac6c888",
+          "version": null
         }
       },
       {

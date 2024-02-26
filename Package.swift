@@ -144,7 +144,8 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-metrics.git", "1.0.0"..<"3.0.0"),
         .package(url: "https://github.com/LiveUI/XMLCoding.git", from: "0.4.1"),
         .package(url: "https://github.com/amzn/smoke-http.git", from: "2.19.1"),
-        .package(url: "https://github.com/amzn/smoke-aws-support.git", from: "1.7.0"),
+//		.package(url: "https://github.com/amzn/smoke-aws-support.git", from: "1.7.0"),
+		.package(url: "https://github.com/fcobia/smoke-aws-support-for-crypto.git", branch: "franks_branch_1.7.0"),
 		.package(url: "https://github.com/apple/swift-crypto.git", "1.0.0"..<"4.0.0"),
     ],
     targets: [
@@ -307,8 +308,8 @@ let package = Package(
                 .product(name: "Metrics", package: "swift-metrics"),
                 .product(name: "XMLCoding", package: "XMLCoding"),
                 .product(name: "SmokeHTTPClient", package: "smoke-http"),
-                .product(name: "AWSCore", package: "smoke-aws-support"),
-                .product(name: "AWSLogging", package: "smoke-aws-support"),
+                .product(name: "AWSCore", package: "smoke-aws-support-for-crypto"),
+                .product(name: "AWSLogging", package: "smoke-aws-support-for-crypto"),
             ]),
         .target(
             name: "SmokeAWSHttp", dependencies: [
@@ -321,7 +322,7 @@ let package = Package(
                 .product(name: "HTTPPathCoding", package: "smoke-http"),
                 .product(name: "HTTPHeadersCoding", package: "smoke-http"),
                 .product(name: "Crypto", package: "swift-crypto"),
-                .product(name: "AWSHttp", package: "smoke-aws-support"),
+                .product(name: "AWSHttp", package: "smoke-aws-support-for-crypto"),
             ]),
         .target(
             name: "_SmokeAWSHttpConcurrency", dependencies: [
